@@ -1,0 +1,4 @@
+---
+title: "Get course"
+openapi: "GET /courses/{courseId}"
+---
