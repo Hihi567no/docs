@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Learnio",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -45,30 +45,28 @@
           },
           {
             "group": "Endpoint Examples",
-            {
-  "pages": [
-    "api-reference/endpoint/getCourses",
-    "api-reference/endpoint/getCourse",
-    "api-reference/endpoint/createCourse",
-    "api-reference/endpoint/updateCourse",
-    "api-reference/endpoint/deleteCourse",
-    "api-reference/endpoint/getTeachers",
-    "api-reference/endpoint/getTeacher",
-    "api-reference/endpoint/createTeacher",
-    "api-reference/endpoint/updateTeacher",
-    "api-reference/endpoint/deleteTeacher",
-    "api-reference/endpoint/getStudents",
-    "api-reference/endpoint/getStudent",
-    "api-reference/endpoint/createStudent",
-    "api-reference/endpoint/updateStudent",
-    "api-reference/endpoint/deleteStudent",
-    "api-reference/endpoint/getTests",
-    "api-reference/endpoint/getTest",
-    "api-reference/endpoint/createTest",
-    "api-reference/endpoint/updateTest",
-    "api-reference/endpoint/deleteTest"
-  ]
-}
+            "pages": [
+              "api-reference/endpoint/getCourses",
+              "api-reference/endpoint/getCourse",
+              "api-reference/endpoint/createCourse",
+              "api-reference/endpoint/updateCourse",
+              "api-reference/endpoint/deleteCourse",
+              "api-reference/endpoint/getTeachers",
+              "api-reference/endpoint/getTeacher",
+              "api-reference/endpoint/createTeacher",
+              "api-reference/endpoint/updateTeacher",
+              "api-reference/endpoint/deleteTeacher",
+              "api-reference/endpoint/getStudents",
+              "api-reference/endpoint/getStudent",
+              "api-reference/endpoint/createStudent",
+              "api-reference/endpoint/updateStudent",
+              "api-reference/endpoint/deleteStudent",
+              "api-reference/endpoint/getTests",
+              "api-reference/endpoint/getTest",
+              "api-reference/endpoint/createTest",
+              "api-reference/endpoint/updateTest",
+              "api-reference/endpoint/deleteTest"
+            ]
           }
         ]
       }
