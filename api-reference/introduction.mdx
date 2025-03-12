@@ -1,28 +1,25 @@
----
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
----
+**title:** 'API Reference'  
+**description:** 'Comprehensive guide to the Learning App API endpoints'
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  If you're not planning to include API reference documentation in your project, you can remove this section by deleting the `api-reference` folder.
 </Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+The Learning App API allows developers to interact with courses, teachers, students, and tests within the platform. You can build API documentation using two methods: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) or [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For this starter kit, we are utilizing the following OpenAPI specification.
 
 <Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  title="Learning App API Specification"
+  icon="book"
+  href="https://github.com/your-repo/learning-app-api/blob/main/api-reference/openapi.yaml"
 >
   View the OpenAPI specification file
 </Card>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API endpoints require authentication via Bearer tokens, as defined in the specification file.
 
 ```json
 "security": [
@@ -31,3 +28,49 @@ All API endpoints are authenticated using Bearer tokens and picked up from the s
   }
 ]
 ```
+
+### Example Authentication Header
+
+When making requests to the API, include the following header:
+
+```http
+Authorization: Bearer <your-token>
+```
+
+## Key Features
+
+- **Courses**: Manage course creation, updates, and deletion.
+- **Teachers**: Add, modify, or delete teacher profiles.
+- **Students**: Handle student data, including enrollment and details.
+- **Tests**: Create and manage tests associated with specific courses.
+
+### Example Endpoint
+
+Here’s an example of how to fetch all courses:
+
+```http
+GET /courses
+```
+
+#### Response
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Introduction to Programming",
+    "description": "Learn the basics of programming.",
+    "teacherId": 1
+  },
+  {
+    "id": 2,
+    "name": "Advanced Mathematics",
+    "description": "Dive into complex mathematical concepts.",
+    "teacherId": 2
+  }
+]
+```
+
+---
+
+This updated text reflects the structure and functionality of your learning app API while maintaining clarity and relevance for developers who will interact with it. Let me know if you'd like further adjustments!
